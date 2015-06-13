@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Habitac Mock-Up</title>
+  <meta charset="utf-8">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../0_css/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../0_css/style.css">
+
+  <!-- Javascript -->
+  <script src="../0_js/jquery-2.1.4.min.js"></script>
+  <script src="../0_css/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+      <h3>Souhaitez vous ajouter des équippements ou des éléments de menuiserie dans certaines pieces?</h3>
+
+      <br>
+      <div class="rooms">
+        <h4>Cuisine</h4>
+        <a class="add" href="#">Ajouter un élément</a>
+        <div class="element-form">
+          <h3>Hello!</h3>
+        </div>
+      </div>
+
+      <div class="rooms">
+        <h4>Salle de bain</h4>
+        <a class="add" href="#">Ajouter un élément</a>
+        <div class="element-form">
+          <h3>Hello!</h3>
+        </div>
+      </div>
+
+      <div class="rooms">
+        <h4>Chambre 1</h4>
+        <a class="add" href="#">Ajouter un élément</a>
+        <div class="element-form">
+          <h3>Hello!</h3>
+        </div>
+      </div>
+
+
+
+      <a href="/wizard/K_elements.html" class="btn btn-primary pull-right">Continuer</a>
+      <a href="#" class="btn btn-danger pull-right">Sauver et quitter</a>
+
+
+  </div>
+  <script type="text/javascript">
+    $('.add').click(function(e){
+      e.stopPropagation();
+      $(this).siblings('.element-form').css("display", "block");
+    })
+  </script>
+</body>
+</html>

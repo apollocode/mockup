@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Habitac Mock-Up</title>
+  <meta charset="utf-8">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../0_css/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../0_css/style.css">
+
+  <!-- Javascript -->
+  <script src="../0_js/jquery-2.1.4.min.js"></script>
+  <script src="../0_css/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+      <h3>Souhaitez-vous isoler des murs existants?</h3>
+      <br>
+      <select id="select">
+        <option>oui</option>
+        <option>non</option>
+      </select>
+
+      <div class="section-form">
+        <h1>hello!</h1>
+        <a href="/wizard/0_composition.html" class="btn btn-primary pull-right">Continuer</a>
+        <a href="#" class="btn btn-danger pull-right">Sauver et quitter</a>
+      </div>
+
+
+
+
+  </div>
+  <script type="text/javascript">
+    $('#select').prop('selectedIndex', -1);
+    $('#select').change(function(){
+      var choice = $(this).find(":selected").text();
+
+      if (choice == "oui") {
+        $('.section-form').css("display", "block");
+      } else {
+        window.location.href = "/wizard/0_composition.html";
+      }
+
+    })
+  </script>
+</body>
+</html>
