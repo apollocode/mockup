@@ -15,7 +15,6 @@
 
 </head>
 <body>
-
   <div class="container">
       <h3>Voulez vous réaliser des travaux de façade (revêtement, ravalaments)?</h3>
       <br>
@@ -25,22 +24,117 @@
       </select>
 
       <div class="section-form">
-        <div class="sub-section">
 
+        <div class="sub-section">
+          <label>Souhaitez-vous agrandir ou créer des ouvertures (porte ou fenetre) dans la facade? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+            <div class="items">
+            </div>
+
+            <div class="item-form">
+              <h4>Nouvelle opération</h4>
+              <label>Agrandir</label>
+              <input type="radio" name="type" value="aggrandissement">
+              <label>Ouvrir</label>
+              <input type="radio" name="type" value="ouverture">
+              <label>Largeur</label>
+              <input>
+              <label>Longueur</label>
+              <input>
+            </div>
+            <a href="#" class="add-item" data-template='
+            <div>
+              <label>Agrandir</label>
+              <input type="radio" name="noname2" value="aggrandissement" checked>
+              <label>Ouvrir</label>
+              <input type="radio" name="noname1" value="ouverture">
+              <label>Largeur</label>
+              <input value="some dummmy data">
+              <label>Longueur</label>
+              <input value="some dummmy data">
+              <a href="#" onclick="$(this).parent().remove()">X Delete</a>
+            </div>'>
+              + Ajouter une autre opération
+            </a>
+
+          </div>
         </div>
 
+        <div class="sub-section">
+          <label>Souhaitez-vous isoler vos murs ? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+            <div class="form-group">
+              <label>Quel est la surface à isoler?</label>
+              <input>
+            </div>
+            <div class="form-group">
+              <label>Quel type d'isolation souhaitez-vous ?<label>
+              <select>
+                <option>Phonique</option>
+                <option>Thermique</option>
+                <option>Thermique et phonique</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Comment souhaitez-vous isoler vos murs ? <label>
+              <select>
+                <option>Isolation par l'intérieur</option>
+                <option>Isolation par l'extérieur</option>
+                <option>je ne sais pas</option>
+              </select>
+            </div>
+            <div class="form-group">
+              j'ai volontairement pas mis la question sur la finition, je pense qu'elle se recoupe avec les questions sur le bardage ou l'enduit
+            </div>
+          </div>
+        </div>
 
+        <div class="sub-section">
+          <label>Souhaitez-vous crépir ou enduir la facade ? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+            <div class="form-group">
+              <label>Quel est la surface à crépir/enduir?</label>
+              <input>
+            </div>
+          </div>
+        </div>
 
-
+        <div class="sub-section">
+          <label>Souhaitez-vous barder la facade ? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+            <div class="form-group">
+              <label>Quel est la surface à couvrir?</label>
+              <input>
+            </div>
+          </div>
+        </div>
 
         <a href="./E_interior_design.html" class="btn btn-primary pull-right">Continuer</a>
         <a href="#" class="btn btn-danger pull-right">Sauver et quitter</a>
       </div>
 
-
-
-
   </div>
+
   <script type="text/javascript">
     $('#select').prop('selectedIndex', -1);
     $('#select').change(function(){

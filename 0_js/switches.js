@@ -1,6 +1,5 @@
 $(document).ready(function(){
   $('.switch-input').change(function(){
-    console.log($(this).parent().siblings('.sub-form'))
     var checked = $(this).prop('checked');
     var section = $(this).parent().siblings('.sub-form');
     if (checked) {
@@ -16,5 +15,10 @@ $(document).ready(function(){
     var $section = $($(this).siblings(".sub-form")[choice]);
     $(this).siblings(".sub-form").css("display", "none");
     $section.css("display", "block");
+  })
+
+  $('.add-item').click(function(){
+    var template = $(this).data('template');
+    $(this).siblings('.items').append(template);
   })
 })
