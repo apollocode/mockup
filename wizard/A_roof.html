@@ -11,6 +11,7 @@
   <!-- Javascript -->
   <script src="../0_js/jquery-2.1.4.min.js"></script>
   <script src="../0_css/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../0_js/switches.js"></script>
 
 </head>
 <body>
@@ -23,17 +24,98 @@
         <option>non</option>
       </select>
 
+
       <div class="section-form">
-        <h1>hello!</h1>
+        <div class="sub-section">
+          <label>Souhaitez-vous remplacer ou faire la couverture ? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+            <div class="form-group">
+              <label>Quel type de couverture souhaitez vous?</label>
+              <select>
+                <option>tuiles</option>
+                <option>ardoises</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Quelle est la surface de votre toit</label>
+              <input>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <label>Souhaitez-vous isoler votre toit ? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+            <div class="form-group">
+              <label>Quel type de toit souhaitez-vous isoler ? </label>
+              <select>
+                <option>Combles perdus</option>
+                <option>Combles aménagés</option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <label>Souhaitez-vous remplacer ou installer des gouttières ? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+            <div class="form-group">
+              <label>Quel type de gouttières souhaitez-vous ?</label>
+              <select>
+                <option>PVC</option>
+                <option>Aluminium</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Quelle longueur de gouttiere souhaitez vous?</label>
+              <input>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <label>Souhaitez-vous modifier la charpente ? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+            <div class="form-group">
+              <label>Quel type de charpente souhaitez-vous ? </label>
+              <select>
+                <option>Charpente traditionnelle</option>
+                <option>Fermette traditionnelle</option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
         <a href="/wizard/B_outdoor_flooring.html" class="btn btn-primary pull-right">Continuer</a>
         <a href="#" class="btn btn-danger pull-right">Sauver et quitter</a>
       </div>
-
-
-
-
   </div>
-  <script type="text/javascript">
+
+    <script type="text/javascript">
     $('#select').prop('selectedIndex', -1);
     $('#select').change(function(){
       var choice = $(this).find(":selected").text();
@@ -46,5 +128,6 @@
 
     })
   </script>
+
 </body>
 </html>

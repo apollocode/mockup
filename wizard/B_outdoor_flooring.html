@@ -11,6 +11,7 @@
   <!-- Javascript -->
   <script src="../0_js/jquery-2.1.4.min.js"></script>
   <script src="../0_css/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../0_js/switches.js"></script>
 
 </head>
 <body>
@@ -24,7 +25,108 @@
       </select>
 
       <div class="section-form">
-        <h1>hello!</h1>
+        <div class="sub-section">
+          <label>Quel revêtement de sol extérieur souhaitez-vous ?</label>
+          <select class="sub-form-select">
+            <option>Carrelage</option>
+            <option>Dalles ou pavés</option>
+            <option>Terrasse en bois</option>
+          </select>
+          <div class="sub-form">
+            <div class="form-group">
+              <label>Quelle est la surface à carreler ?</label>
+              <input>
+            </div>
+            <div class="form-group">
+              <label>Faut-il enlever le carrelage existant ?</label>
+              <select>
+                <option>oui</option>
+                <option>non</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Faut il créer une chape ? </label>
+              <select>
+                <option>oui</option>
+                <option>non</option>
+                <option>je ne sais pas</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Quel type de carrelage souhaitez-vous ?</label>
+              <select>
+                <option>collé</option>
+                <option>scellé</option>
+                <option>je ne sais pas</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Quel type de pose souhaitez-vous ?</label>
+              <select>
+                <option>droite</option>
+                <option>diagonale</option>
+                <option>je ne sais pas</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="sub-form">
+            <div class="form-group">
+              <label>Quelle est la surface de dalles ou pavés à poser ?</label>
+              <input>
+            </div>
+            <div class="form-group">
+              <label>Quel est le type de dalles ou pavés à poser ?</label>
+              <select>
+                <option>Autobloquant</option>
+                <option>Pavage sur lite de sable</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Faut il créer une chape ? </label>
+              <select>
+                <option>oui</option>
+                <option>non</option>
+                <option>je ne sais pas</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="sub-form">
+            <div class="form-group">
+              <label>Quelle est la surface de la terrasse en bois ?</label>
+              <input>
+            </div>
+            <div class="form-group">
+              <label>Quel bois souhaitez vous pour votre terrasse ?</label>
+              <select>
+                <option>Bois européen (pin…)</option>
+                <option>Exotique (teck…)</option>
+                <option>...</option>
+                <option>je ne sais pas</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Quel type de terrasse souhaitez vous ? </label>
+              <select>
+                <option>En lame</option>
+                <option>En dalle</option>
+                <option>je ne sais pas</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Faut il créer une chape ? </label>
+              <select>
+                <option>oui</option>
+                <option>non</option>
+                <option>je ne sais pas</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+
         <a href="/wizard/C_structural_works.html" class="btn btn-primary pull-right">Continuer</a>
         <a href="#" class="btn btn-danger pull-right">Sauver et quitter</a>
       </div>
@@ -46,5 +148,6 @@
 
     })
   </script>
+
 </body>
 </html>
