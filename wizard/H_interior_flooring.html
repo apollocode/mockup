@@ -25,7 +25,142 @@
       </select>
 
       <div class="section-form">
-        <h1>hello!</h1>
+
+        <div class="border">
+          <div class="items">
+          </div>
+
+          <div class="item-form">
+            <h4>Nouvelle opération de revetement</h4>
+            <div class="sub-section">
+              <label>Quel revêtement de sol souhaitez-vous ?</label>
+              <select class="sub-form-select">
+                <option>Carrelage</option>
+                <option>parquet</option>
+                <option>...</option>
+              </select>
+              <div class="sub-form">
+                <div class="form-group">
+                  <label>Faut-il enlever le carrelage existant ?</label>
+                  <select>
+                    <option>oui</option>
+                    <option>non</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Quel type de carrelage souhaitez-vous ?</label>
+                  <select>
+                    <option>collé</option>
+                    <option>scellé</option>
+                    <option>je ne sais pas</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Quel type de pose souhaitez-vous ?</label>
+                  <select>
+                    <option>droite</option>
+                    <option>diagonale</option>
+                    <option>je ne sais pas</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="sub-form">
+                <div class="form-group">
+                  <label>Quel type de parquet souhaitez-vous ? </label>
+                  <select>
+                    <option>Bois massif collé</option>
+                    <option>Bois massif clouté</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="sub-form">
+              </div>
+
+              <div class="form-group">
+                <label>Quelle est la surface à recouvrir ?</label>
+                <input>
+              </div>
+              <div class="form-group">
+                <label>Souhaitez vous isoler le sol <span style="color:red">(précise si on parle de thermique ou phonique</span> ?</label>
+                <select>
+                  <option>oui</option>
+                  <option>non</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="add-item" data-template='
+          <div class="item">
+              <div class="sub-section">
+                <label>Quel revêtement de sol souhaitez-vous ?</label>
+                <select class="sub-form-select">
+                  <option>Carrelage</option>
+                  <option>parquet</option>
+                  <option>...</option>
+                </select>
+                <div class="sub-form">
+                  <div class="form-group">
+                    <label>Faut-il enlever le carrelage existant ?</label>
+                    <select>
+                      <option>oui</option>
+                      <option>non</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Quel type de carrelage souhaitez-vous ?</label>
+                    <select>
+                      <option>collé</option>
+                      <option>scellé</option>
+                      <option>je ne sais pas</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Quel type de pose souhaitez-vous ?</label>
+                    <select>
+                      <option>droite</option>
+                      <option>diagonale</option>
+                      <option>je ne sais pas</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="sub-form">
+                  <div class="form-group">
+                    <label>Quel type de parquet souhaitez-vous ? </label>
+                    <select>
+                      <option>Bois massif collé</option>
+                      <option>Bois massif clouté</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="sub-form">
+                </div>
+
+                <div class="form-group">
+                  <label>Quelle est la surface à recouvrir ?</label>
+                  <input>
+                </div>
+                <div class="form-group">
+                  <label>Souhaitez vous isoler le sol <span style="color:red">(précise si on parle de thermique ou phonique</span> ?</label>
+                  <select>
+                    <option>oui</option>
+                    <option>non</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <a href="#" onclick="$(this).parent().remove()">X Delete</a>
+          </div>'>
+            + Ajouter une autre opération de revetement
+          </a>
+        </div>
+
+
         <a href="./I_walls.html" class="btn btn-primary pull-right">Continuer</a>
         <a href="#" class="btn btn-danger pull-right">Sauver et quitter</a>
       </div>

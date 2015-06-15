@@ -16,13 +16,14 @@
 </head>
 <body>
   <div class="container">
+
       <h3>Voulez vous réaliser des travaux de façade (revêtement, ravalaments)?</h3>
       <br>
       <select id="select">
         <option>oui</option>
         <option>non</option>
       </select>
-
+      <H3 style="color:red">Segmentation a revoir sur tout ce qui concerne ouvrants sur facade et sur cloisons internes</H3>
       <div class="section-form">
 
         <div class="sub-section">
@@ -46,9 +47,10 @@
               <input>
               <label>Longueur</label>
               <input>
+              <p style="color:red"> faut il demander l'epaisseur du mur ou sa compo°</p>
             </div>
             <a href="#" class="add-item" data-template='
-            <div>
+            <div class="item">
               <label>Agrandir</label>
               <input type="radio" name="noname2" value="aggrandissement" checked>
               <label>Ouvrir</label>
@@ -61,7 +63,59 @@
             </div>'>
               + Ajouter une autre opération
             </a>
+          </div>
+        </div>
 
+        <div class="sub-section">
+          <label>Souhaitez-vous supprimer des ouvertures dans la facade? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+
+            <div class="form-group">
+              <p style="color:red">Quelles questions subsidiaires?</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <label>Souhaitez-vous faire ravaler vos murs ? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+
+            <div class="form-group">
+              <label>Quel type de ravalement souhaitez-vous ?<label>
+              <select>
+                <option>Hydrogommage + peinture</option>
+                <option>Hydro-gommage + rejointillage</option>
+                <option>...</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <label>Souhaitez-vous barder, crépir ou enduir la facade ? </label>
+          <select class="select-switch">
+            <option>Non</option>
+            <option>Crépir</option>
+            <option>Enduir</option>
+            <option>Enduir</option>
+          </select>
+          <div class="sub-form">
+            <div class="form-group">
+              <label>Quel est la surface à couvrir?</label>
+              <input>
+            </div>
           </div>
         </div>
 
@@ -100,33 +154,13 @@
         </div>
 
         <div class="sub-section">
-          <label>Souhaitez-vous crépir ou enduir la facade ? </label>
-          <label class="switch">
-            <input type="checkbox" class="switch-input">
-            <span class="switch-label" data-on="Oui" data-off="Non"></span>
-            <span class="switch-handle"></span>
-          </label>
-          <div class="sub-form">
-            <div class="form-group">
-              <label>Quel est la surface à crépir/enduir?</label>
-              <input>
-            </div>
-          </div>
-        </div>
-
-        <div class="sub-section">
-          <label>Souhaitez-vous barder la facade ? </label>
-          <label class="switch">
-            <input type="checkbox" class="switch-input">
-            <span class="switch-label" data-on="Oui" data-off="Non"></span>
-            <span class="switch-handle"></span>
-          </label>
-          <div class="sub-form">
-            <div class="form-group">
-              <label>Quel est la surface à couvrir?</label>
-              <input>
-            </div>
-          </div>
+          <label>Quel est la composition de vos murs ? </label>
+          <select>
+            <option>Bois</option>
+            <option>Pierre</option>
+            <option>Ciment</option>
+            <option>...</option>
+          </select>
         </div>
 
         <a href="./E_interior_design.html" class="btn btn-primary pull-right">Continuer</a>

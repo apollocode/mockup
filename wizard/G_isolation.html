@@ -25,7 +25,59 @@
       </select>
 
       <div class="section-form">
-        <h1>hello!</h1>
+        <p>Pour l'isolation d'une cloison, il y a deux parametre à prendre en compte.</p>
+        <ul style="text-align:left">
+          <li>Le type d'isolation : thermique (temperature), phonique (son) ou bien les deux a la fois</li>
+          <li>la methode d'isolation : par l'intérieur ou par l'exterieur <span style="color:red">(préciser les différences entre les 2)</span></li>
+        </ul>
+        <p>
+        A l'aide des questions suivantes, vous pouvez choisir d'isoler différements différentes cloisons de votre logement</p>
+        <div class="border">
+          <div class="items">
+          </div>
+
+          <div class="item-form">
+            <h4>Nouvelle opération d'isolation</h4>
+            <label>Surface à isoler</label>
+            <input>
+            <label>type d'isolation</label>
+            <select>
+              <option>thermique</option>
+              <option>phonique</option>
+              <option>thermique et phonique</option>
+            </select>
+            <label>Méthode</label>
+            <select>
+              <option>Par l'intérieur</option>
+              <option>par l'extérieur</option>
+              <option>je ne sais pas</option>
+            </select>
+
+            <p style="color:red">quelles sont les options de finitions possibles pour parois intérieure? est il possible de faire une iso par l'intérieur sur une parois déja construite?</p>
+          </div>
+          <a href="#" class="add-item" data-template='
+          <div class="item">
+            <label>Surface à isoler</label>
+            <input>
+            <label>type d isolation</label>
+            <select>
+              <option>thermique</option>
+              <option>phonique</option>
+              <option>thermique et phonique</option>
+            </select>
+            <label>Méthode</label>
+            <select>
+              <option>intérieur</option>
+              <option>extérieur</option>
+              <option>je ne sais pas</option>
+            </select>
+            <a href="#" onclick="$(this).parent().remove()">X Delete</a>
+          </div>'>
+            + Ajouter une autre opération d'isolation
+          </a>
+        </div>
+
+
         <a href="./0_composition.html" class="btn btn-primary pull-right">Continuer</a>
         <a href="#" class="btn btn-danger pull-right">Sauver et quitter</a>
       </div>

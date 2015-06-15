@@ -25,7 +25,91 @@
       </select>
 
       <div class="section-form">
-        <h1>hello!</h1>
+
+        <div class="sub-section">
+          <label>Souhaitez-vous abattre des cloisons internes ? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+            <div class="items">
+            </div>
+
+            <div class="item-form">
+              <h4>Nouvelle opération</h4>
+              <label>Quelle est la longueur du mur à abattre?</label>
+              <input>
+              <label>Quelle est la composition du mur?</label>
+              <select>
+                <option>Platre</option>
+                <option>Ciment</option>
+                <option>...</option>
+                <option>Je ne sais pas</option>
+              </select>
+              <br>
+              <label>S'agit il d'un mur porteur?</label>
+              <select>
+                <option>Oui</option>
+                <option>Non</option>
+                <option>Je ne sais pas</option>
+              </select>
+            </div>
+            <a href="#" class="add-item" data-template='
+            <div class="item">
+              <label>Quelle est la longueur du mur à abattre?</label>
+              <input>
+              <label>Quelle est la composition du mur?</label>
+              <select>
+                <option>Platre</option>
+                <option>Ciment</option>
+                <option>...</option>
+                <option>Je ne sais pas</option>
+              </select>
+              <br>
+              <label>Est-ce un mur porteur?</label>
+              <select>
+                <option>Oui</option>
+                <option>Non</option>
+                <option>Je ne sais pas</option>
+              </select>              <a href="#" onclick="$(this).parent().remove()">X Delete</a>
+            </div>'>
+              + Abattre une autre cloison
+            </a>
+
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <label>Souhaitez-vous construire de nouvelles cloisons internes ? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+            <div class="items">
+            </div>
+
+            <div class="item-form">
+              <h4>Nouvelle opération</h4>
+              <span>questions subsidiaires liées à la cloison</span>
+              <p style="color=red">TO DO: rajouter les questions de cette section</p>
+            </div>
+            <a href="#" class="add-item" data-template='
+            <div>
+              <span>questions subsidiaires liées à la cloison</span>
+              <a href="#" onclick="$(this).parent().remove()">X Delete</a>
+            </div>'>
+              + Construire une autre cloison
+            </a>
+
+          </div>
+        </div>
+
+
+
         <a href="./F_openings.html" class="btn btn-primary pull-right">Continuer</a>
         <a href="#" class="btn btn-danger pull-right">Sauver et quitter</a>
       </div>

@@ -23,9 +23,66 @@
         <option>oui</option>
         <option>non</option>
       </select>
-
+      <H3 style="color:red">Segmentation a revoir sur tout ce qui concerne ouvrants sur facade et sur cloisons internes</H3>
       <div class="section-form">
-        <h1>hello!</h1>
+
+        <div class="sub-section">
+          <label>Souhaitez-vous agrandir ou créer des ouvertures (porte ou fenetre) dans les murs? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+            <div class="items">
+            </div>
+
+            <div class="item-form">
+              <h4>Nouvelle opération</h4>
+              <label>Agrandir</label>
+              <input type="radio" name="type" value="aggrandissement">
+              <label>Ouvrir</label>
+              <input type="radio" name="type" value="ouverture">
+              <label>Largeur</label>
+              <input>
+              <label>Longueur</label>
+              <input>
+              <p style="color:red">Faut il demander l'epaisseur du mur ou sa compo°</p>
+            </div>
+            <a href="#" class="add-item" data-template='
+            <div class="item">
+              <label>Agrandir</label>
+              <input type="radio" name="noname2" value="aggrandissement" checked>
+              <label>Ouvrir</label>
+              <input type="radio" name="noname1" value="ouverture">
+              <label>Largeur</label>
+              <input value="some dummmy data">
+              <label>Longueur</label>
+              <input value="some dummmy data">
+              <a href="#" onclick="$(this).parent().remove()">X Delete</a>
+            </div>'>
+              + Ajouter une autre opération
+            </a>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <label>Souhaitez-vous supprimer des portes dans les murs existants? </label>
+          <label class="switch">
+            <input type="checkbox" class="switch-input">
+            <span class="switch-label" data-on="Oui" data-off="Non"></span>
+            <span class="switch-handle"></span>
+          </label>
+          <div class="sub-form">
+
+            <div class="form-group">
+              <p style="color:red">Quelles questions subsidiaires?</p>
+            </div>
+
+          </div>
+        </div>
+
+
         <a href="./G_isolation.html" class="btn btn-primary pull-right">Continuer</a>
         <a href="#" class="btn btn-danger pull-right">Sauver et quitter</a>
       </div>

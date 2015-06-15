@@ -11,14 +11,57 @@
   <!-- Javascript -->
   <script src="../0_js/jquery-2.1.4.min.js"></script>
   <script src="../0_css/bootstrap/js/bootstrap.min.js"></script>
-  <script type="../0_js/switches.js"></script>
+  <script src="../0_js/switches.js"></script>
 </head>
 <body>
 
   <div class="container">
     <h3>Quelle est la composition de votre logement / quelle sera la composition de votre logement apres la modification des cloisons?</h3>
     <br>
-    <p>Ajouter une piece +</p>
+    <div class="form-section">
+
+      <div class="form-group">
+        <label>De combien d'étages se compose votre logement? </label>
+        <input>
+      </div>
+      <div>
+        <div class="items">
+        </div>
+
+        <div class="item-form">
+          <h4>Listez les différentes pieces de votre maison</h4>
+          <label>Surface de la piece</label>
+          <input>
+          <label>Nature de la piece</label>
+          <select>
+            <option>Chambre</option>
+            <option>Salon</option>
+            <option>cuisine</option>
+            <option>...</option>
+          </select>
+          <label>description de la piece (ex: chambre de Maxime)</label>
+          <input>
+        </div>
+        <a href="#" class="add-item" data-template='
+        <div class="item">
+          <label>Surface de la piece</label>
+          <input>
+          <label>Nature de la piece</label>
+          <select>
+            <option>Chambre</option>
+            <option>Salon</option>
+            <option>cuisine</option>
+            <option>...</option>
+          </select>
+          <label>description de la piece (ex: chambre de Maxime)</label>
+          <input>
+        </div>'>
+          + Ajouter une autre opération d'isolation
+        </a>
+      </div>
+
+    </div>
+
 
     <a href="./H_interior_flooring.html" class="btn btn-primary pull-right">Continuer</a>
     <a href="#" class="btn btn-danger pull-right">Sauver et quitter</a>

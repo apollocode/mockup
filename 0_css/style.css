@@ -26,13 +26,25 @@
   padding:5px;
   margin:10px;
 }
+.border{
+  border:1px solid darkgreen;
+  padding:5px;
+  margin:10px;
+}
 
 .sub-section {
   margin-bottom: 20px;
 }
 
+.items {
+  border:2px solid lightgray;
+  padding:5px;
+  margin:10px;
+}
 
-
+.item {
+  padding: 15px 0
+}
 
 
 

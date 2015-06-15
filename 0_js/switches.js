@@ -17,8 +17,20 @@ $(document).ready(function(){
     $section.css("display", "block");
   })
 
+
+  $('.select-switch').prop('selectedIndex', -1);
+  $('.select-switch').change(function(){
+    var $section = $($(this).siblings(".sub-form"));
+    if ($(this).val() == "Non") {
+      $section.css("display", "none");
+    } else {
+      $section.css("display", "block");
+    }
+  })
+
   $('.add-item').click(function(){
     var template = $(this).data('template');
     $(this).siblings('.items').append(template);
   })
 })
+
